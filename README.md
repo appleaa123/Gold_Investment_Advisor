@@ -1,4 +1,6 @@
 # Gold Investment AI Agent
+## WARNING
+This is a proof of concept for an AI-powered gold investment advisor. The goal of this project is to explore the use of AI to make gold trading decisions. This project is for educational purposes ONLY and is NOT INTENDED for real gold investment, or any investment.
 
 ## Overview
 This project implements an AI agent system for gold investment analysis, inspired by the [ai-hedge-fund](https://github.com/virattt/ai-hedge-fund) project and following the [Product Requirement Document (PRD)](../Gold%20Investment%20AI%20Agent%20PRD.markdown). The system uses multiple specialized agents to analyze economic, technical, and sentiment factors affecting gold prices, synthesizing actionable investment recommendations.
