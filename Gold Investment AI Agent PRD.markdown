@@ -31,7 +31,7 @@ The system is designed to be intuitive, delivering clear insights from complex d
 
 3. **Decision Synthesis**:
    - A central coordinator aggregates agent outputs to provide a comprehensive recommendation (e.g., buy, sell, hold).
-   - Includes summaries of each agent’s analysis for transparency.
+   - Includes summaries of each agent's analysis for transparency.
 
 4. **Simulation Mode**:
    - Simulates investment strategies using historical data, providing metrics like return on investment and risk.
@@ -43,7 +43,7 @@ The system is designed to be intuitive, delivering clear insights from complex d
 
 1. **Agent Development**:
    - Implement each agent as a Python class in LangGraph.
-   - Use specific prompts to define agent roles (e.g., “Analyze inflation rates to assess gold price impact”).
+   - Use specific prompts to define agent roles (e.g., "Analyze inflation rates to assess gold price impact").
    - Enable data processing from APIs or datasets.
 
 2. **Data Access**:
@@ -51,11 +51,11 @@ The system is designed to be intuitive, delivering clear insights from complex d
    - Load and update datasets periodically for offline use.
 
 3. **Agent Interaction**:
-   - Share data via LangGraph’s shared state.
+   - Share data via LangGraph's shared state.
    - Coordinator aggregates outputs for a final recommendation.
 
 4. **User Interface**:
-   - Provide a dashboard with a “Run Analysis” button and recommendation display.
+   - Provide a dashboard with a "Run Analysis" button and recommendation display.
    - Show detailed agent analyses and visualizations.
 
 5. **Simulation**:
@@ -305,14 +305,20 @@ gold_investment_agent/
 │   ├── tools/
 │   │   ├── api_tools.py
 │   │   ├── data_tools.py
+│   │   ├── api.py
+│   │   ├── simulation.py
 │   ├── main.py
 │   ├── coordinator.py
 ├── data/
 │   ├── historical_data.csv
 ├── logs/
 ├── .env
+├── .env.example
+├── .gitignore
+├── requirements.txt or pyproject.toml
 ├── web/
 │   ├── index.html
+└── README.md
 ```
 
 ## 12. Next Steps
@@ -321,3 +327,92 @@ gold_investment_agent/
 3. **Integrate Data**: Connect to a free API or load a dataset.
 4. **Build UI**: Develop the React interface and connect it to the backend.
 5. **Iterate**: Add agents and refine based on testing.
+
+## .gitignore Example (based on ai-hedge-fund)
+
+```gitignore
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# dotenv
+.env
+.env.*
+
+# Data and logs
+data/
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+```
+
+## References
+
+- [ai-hedge-fund GitHub repository](https://github.com/virattt/ai-hedge-fund)
+- [ai-hedge-fund .gitignore](https://github.com/virattt/ai-hedge-fund/blob/main/.gitignore)
+
+**Would you like to proceed with the code for the project setup (directory, .gitignore, requirements), or start with a specific module (e.g., data tools, agent skeletons)? Please specify your preference!**

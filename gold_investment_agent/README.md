@@ -3,6 +3,15 @@
 ## Overview
 This project implements an AI agent system for gold investment analysis, inspired by the [ai-hedge-fund](https://github.com/virattt/ai-hedge-fund) project and following the [Product Requirement Document (PRD)](../Gold%20Investment%20AI%20Agent%20PRD.markdown). The system uses multiple specialized agents to analyze economic, technical, and sentiment factors affecting gold prices, synthesizing actionable investment recommendations.
 
+## Akshare Integration & Agent Customization
+This project uses [Akshare](https://akshare.akfamily.xyz/tutorial.html) for all data integration, including gold prices, macroeconomic indicators, currency rates, news, and supply/demand data. **Users can adjust currencies, gold symbols, and news keywords in all relevant agent `.py` files** to suit their region or analysis needs. For example:
+- `CurrencyMovementsAgent`: Change `base_currency` and `target_currency`.
+- `TechnicalFactorsAgent`: Change `symbol` for different gold contracts.
+- `InvestorSentimentAgent` and `GeopoliticalEventsAgent`: Change `keyword` for news queries.
+- `EconomicIndicatorsAgent` and `SupplyDemandAgent`: Adjust Akshare endpoints for different regions or data sources.
+
+See each agent's source file for details and customization options.
+
 ## Directory Structure
 ```
 gold_investment_agent/
@@ -41,6 +50,7 @@ gold_investment_agent/
 ## References
 - [ai-hedge-fund GitHub repository](https://github.com/virattt/ai-hedge-fund)
 - [Product Requirement Document](../Gold%20Investment%20AI%20Agent%20PRD.markdown)
+- [Akshare Documentation](https://akshare.akfamily.xyz/tutorial.html)
 
 ## License
 MIT License 
