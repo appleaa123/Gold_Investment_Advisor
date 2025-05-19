@@ -67,6 +67,8 @@ dmypy.json
 # dotenv
 .env
 .env.*
+# Explicitly allow .env.example
+!.env.example
 
 # Data and logs
 data/
@@ -74,4 +76,8 @@ logs/
 
 # OS files
 .DS_Store
-Thumbs.db 
+Thumbs.db
+
+# OpenRouter API
+OPENROUTER_API_KEY=your-openrouter-api-key-here
+OPENROUTER_MODEL=qwen/qwen3-4b:free 
