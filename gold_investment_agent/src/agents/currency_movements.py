@@ -23,3 +23,4 @@ class CurrencyMovementsAgent:
         summary = f"USD/EUR Index: {usd_index}"
         state['currency_analysis'] = summary
         return state 
+        # jkjklj
